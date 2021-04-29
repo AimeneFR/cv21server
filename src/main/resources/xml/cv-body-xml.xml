@@ -1,0 +1,35 @@
+<cv>
+    <id>5</id>
+    <identite>
+        <genre>M.</genre>
+        <tel>0123456789</tel>
+        <prenom>Hicham</prenom>
+        <nom>Bouzara</nom>
+    </identite>
+    <prof>
+        <expe>
+          <datedeb>2001-01-01</datedeb>
+          <titre>dev web</titre>
+        </expe>
+        <expe>
+          <datedeb>2001-01-01</datedeb>
+          <titre>dev web</titre>
+          <datefin>2020-01-01</datefin>
+        </expe>
+      </prof>
+    <divers>
+        <lv>
+            <cert>MAT</cert>
+            <nivs>A1</nivs>
+            <lang>EN</lang>
+            <nivi>50</nivi>
+        </lv>
+        <autre>
+            <titre>Permis de conduire</titre>
+            <comment>A, B</comment>
+        </autre>
+    </divers>
+    <objectif>
+        <statut>stage</statut>
+    </objectif>
+</cv>

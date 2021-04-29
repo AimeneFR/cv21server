@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Help - CV21 REST</title>
+    <style></style>
+    <style>
+      th {
+        padding-right: 5em;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>URL</th>
+        <th>Méthode</th>
+        <th>Résumé</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>/</td>
+          <td>GET</td>
+          <td>Format attendu: Aucune <br />Format de retour: HTML</td>
+        </tr>
+        <tr>
+          <td>/help</td>
+          <td>GET</td>
+          <td>Format attendu: Aucune <br />Format de retour: HTML</td>
+        </tr>
+        <tr>
+          <td>/resume</td>
+          <td>GET</td>
+          <td>Format attendu: Aucune <br />Format de retour: Flux XML</td>
+        </tr>
+        <tr>
+          <td>/cv/{id}</td>
+          <td>GET</td>
+          <td>Format attendu: Aucune <br />Format de retour: Flux XML</td>
+        </tr>
+        <tr>
+          <td>/insert</td>
+          <td>POST</td>
+          <td>Format attendu: Flux XML <br />Format de retour: Flux XML</td>
+        </tr>
+        <tr>
+          <td>/delete/{id}</td>
+          <td>DELETE</td>
+          <td>Format attendu: Aucune <br />Format de retour: Flux XML</td>
+        </tr>
+        <tr>
+          <td>/update/{id}</td>
+          <td>PUT</td>
+          <td>Format attendu: Flux XML <br />Format de retour: Flux XML</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

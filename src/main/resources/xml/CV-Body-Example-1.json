@@ -1,0 +1,57 @@
+{
+  "id": "0",
+  "identite": {
+    "genre": "M.",
+    "nom": "Bouzara",
+    "prenom": "Hicham",
+    "tel": "0123456789"
+  },
+  "objectif": {
+    "statut": "stage"
+  },
+  "prof": [
+    {
+      "expe": {
+        "datedeb": "01/01/2020",
+        "datefin": "01/01/2021",
+        "titre": "Titre de l'expe"
+      }
+    },
+    {
+      "expe": {
+        "datedeb": "01/01/2021",
+        "datefin": "01/01/2022",
+        "titre": "Titre de l'expe 2"
+      }
+    }
+  ],
+  "competences": [
+    {
+      "diplome": {
+        "niveau": "III",
+        "date": "01/01/2020",
+        "titre": "Diplome 1",
+        "etab": "ESI"
+      }
+    },
+    {
+      "certif": {
+        "datedeb": "01/01/2020",
+        "datefin": "01/01/2021",
+        "titre": "Titre de la certif 1"
+      }
+    }
+  ],
+  "divers": {
+    "lv": {
+      "cert": "MAT",
+      "lang": "EN",
+      "nivi": "50",
+      "nivs": "A1"
+    },
+    "autre": {
+      "comment": "A, B",
+      "titre": "Permis de conduire"
+    }
+  }
+}

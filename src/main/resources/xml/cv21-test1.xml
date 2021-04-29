@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="tp3.01.xsl" type="text/xsl" ?>
+<cv21 >
+  <Identite>
+    <genre>M.</genre>
+    <nom>NOM</nom>
+    <prenom>prenom</prenom>
+    <tel>0123456789</tel>
+    <mel>mel@mel.fr</mel>
+  </Identite>
+  <objectif statut="stage">developer</objectif>
+  <prof>
+    <expe>
+      <datedeb>2001-01-01</datedeb>
+      <titre>dev web</titre>
+    </expe>
+    <expe>
+      <datedeb>2001-01-01</datedeb>
+      <titre>dev web</titre>
+      <datefin>2020-01-01</datefin>
+    </expe>
+  </prof>
+  <competences>
+  	<diplome niveau="III">
+      <date>2001-01-10</date>
+      <titre>titre3</titre>
+      <etab>etab3</etab>
+    </diplome>
+  	<diplome niveau="I">
+      <date>2001-01-01</date>
+      <titre>titre</titre>
+      <etab>etab</etab>
+    </diplome>
+    <diplome niveau="II">
+      <date>2001-01-05</date>
+      <titre>titre2</titre>
+      <etab>etab2</etab>
+    </diplome>
+    <certif>
+      <datedeb>2001-01-01</datedeb>
+      <titre>titre</titre>
+    </certif>
+    <certif>
+      <datedeb>2001-01-01</datedeb>
+      <titre>titre</titre>
+      <datefin>2020-01-01</datefin>
+    </certif>
+  </competences>
+  <divers>
+    <lv cert="MAT" lang="EN" nivi="50" nivs="A1"/>
+    <autre comment="A, B" titre="Permis de conduire"/>
+  </divers>
+</cv21>
