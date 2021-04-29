@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "b3033702-42a1-4d3f-af74-67901285e7d9",
+    "name": "cv21server",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /resume",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["resume"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /insert",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<cv>\r\n    <id>7</id>\r\n    <identite>\r\n        <genre>M.</genre>\r\n        <tel>0123456789</tel>\r\n        <prenom>Hicham</prenom>\r\n        <nom>Bouzara</nom>\r\n    </identite>\r\n    <prof>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n      </prof>\r\n    <divers>\r\n        <lv>\r\n            <cert>MAT</cert>\r\n            <nivs>A1</nivs>\r\n            <lang>EN</lang>\r\n            <nivi>50</nivi>\r\n        </lv>\r\n        <autre>\r\n            <titre>Permis de conduire</titre>\r\n            <comment>A, B</comment>\r\n        </autre>\r\n    </divers>\r\n    <objectif>\r\n        <statut>stage</statut>\r\n    </objectif>\r\n</cv>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:6039/insert",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["insert"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /cv?id=<id>",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/cv/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["cv", "7"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /cv?id=<id>",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/delete/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["delete", "7"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT /update?id=<id>",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<cv>\r\n    <id>7</id>\r\n    <identite>\r\n        <genre>M.</genre>\r\n        <tel>0123456789</tel>\r\n        <prenom>Aimene</prenom>\r\n        <nom>Bouzara</nom>\r\n    </identite>\r\n    <prof>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n      </prof>\r\n    <divers>\r\n        <lv>\r\n            <cert>MAT</cert>\r\n            <nivs>A1</nivs>\r\n            <lang>EN</lang>\r\n            <nivi>50</nivi>\r\n        </lv>\r\n        <autre>\r\n            <titre>Permis de conduire</titre>\r\n            <comment>A, B</comment>\r\n        </autre>\r\n    </divers>\r\n    <objectif>\r\n        <statut>stage</statut>\r\n    </objectif>\r\n</cv>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:6039/update/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["update", "7"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["resume"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /help",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["resume"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
