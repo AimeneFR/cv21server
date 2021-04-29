@@ -1,6 +1,6 @@
 package fr.univrouen.cv21server.model;
 
-/*
+
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -16,20 +16,18 @@ import java.io.File;
 
 public class XmlValidator {
 
-    public static void Validate(CV cvi) throws JAXBException {
+    public static void Validate(CV cv) throws JAXBException {
         try {
             JAXBContext context = JAXBContext.newInstance(CV.class);
             Marshaller marshaller = context.createMarshaller();
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            //Schema schema = sf.newSchema(new StreamSource(new File(XmlValidator.class.getResource("../../../../stb.xsd").getFile())));
-            Schema schema = sf.newSchema(new StreamSource(new File("./webapps/restcvi/WEB-INF/stb.xsd")));
+            Schema schema = sf.newSchema(new StreamSource(new File("./cv21.xsd")));
             marshaller.setSchema(schema);
             marshaller.setEventHandler(event -> false);
-            marshaller.marshal(cvi, System.out);
+            marshaller.marshal(cv, System.out);
         }
         catch (SAXException e){
             throw new HTTPException(500);
         }
     }
 }
-*/
