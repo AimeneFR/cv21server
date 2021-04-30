@@ -1,184 +1,132 @@
 {
-	"info": {
-		"_postman_id": "b3033702-42a1-4d3f-af74-67901285e7d9",
-		"name": "cv21server",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "GET /",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:6039/resume",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "6039",
-					"path": [
-						"resume"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET /help",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:6039/resume",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "6039",
-					"path": [
-						"resume"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET /resume",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:6039/resume",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "6039",
-					"path": [
-						"resume"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET /cv?id=<id>",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:6039/cv/7",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "6039",
-					"path": [
-						"cv",
-						"7"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST /insert",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "<cv>\r\n    <id>7</id>\r\n    <identite>\r\n        <genre>M.</genre>\r\n        <tel>0123456789</tel>\r\n        <prenom>Hicham</prenom>\r\n        <nom>Bouzara</nom>\r\n    </identite>\r\n    <prof>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n      </prof>\r\n    <divers>\r\n        <lv>\r\n            <cert>MAT</cert>\r\n            <nivs>A1</nivs>\r\n            <lang>EN</lang>\r\n            <nivi>50</nivi>\r\n        </lv>\r\n        <autre>\r\n            <titre>Permis de conduire</titre>\r\n            <comment>A, B</comment>\r\n        </autre>\r\n    </divers>\r\n    <objectif>\r\n        <statut>stage</statut>\r\n    </objectif>\r\n</cv>",
-					"options": {
-						"raw": {
-							"language": "xml"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://127.0.0.1:6039/insert",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "6039",
-					"path": [
-						"insert"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "PUT /update?id=<id>",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "<cv>\r\n    <id>7</id>\r\n    <identite>\r\n        <genre>M.</genre>\r\n        <tel>0123456789</tel>\r\n        <prenom>Aimene</prenom>\r\n        <nom>Bouzara</nom>\r\n    </identite>\r\n    <prof>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n      </prof>\r\n    <divers>\r\n        <lv>\r\n            <cert>MAT</cert>\r\n            <nivs>A1</nivs>\r\n            <lang>EN</lang>\r\n            <nivi>50</nivi>\r\n        </lv>\r\n        <autre>\r\n            <titre>Permis de conduire</titre>\r\n            <comment>A, B</comment>\r\n        </autre>\r\n    </divers>\r\n    <objectif>\r\n        <statut>stage</statut>\r\n    </objectif>\r\n</cv>",
-					"options": {
-						"raw": {
-							"language": "xml"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://127.0.0.1:6039/update/7",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "6039",
-					"path": [
-						"update",
-						"7"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "DELETE /delete?id=<id>",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:6039/delete/7",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "6039",
-					"path": [
-						"delete",
-						"7"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "b3033702-42a1-4d3f-af74-67901285e7d9",
+    "name": "cv21server",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["resume"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /help",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["resume"]
+        }
+      },
+      "response": "<List><item><id>1</id><identite><genre>M.</genre><nom>Bouzara</nom><prenom>Hicham</prenom><tel>0123456789</tel><mel/></identite><objectif><statut>stage</statut></objectif></item><item><id>2</id><identite><genre>M.</genre><nom>Bouzara</nom><prenom>Hicham</prenom><tel>0123456789</tel><mel/></identite><objectif><statut>stage</statut></objectif></item><item><id>3</id><identite><genre>M.</genre><nom>Bouzara</nom><prenom>Hicham</prenom><tel>0123456789</tel><mel/></identite><objectif><statut>stage</statut></objectif></item><item><id>4</id><identite><genre>M.</genre><nom>Bouzara</nom><prenom>Hicham</prenom><tel>0123456789</tel><mel/></identite><objectif><statut>stage</statut></objectif></item><item><id>5</id><identite><genre>M.</genre><nom>Bouzara</nom><prenom>Hicham</prenom><tel>0123456789</tel><mel/></identite><objectif><statut>stage</statut></objectif></item><item><id>7</id><identite><genre>M.</genre><nom>Bouzara</nom><prenom>Aimene</prenom><tel>0123456789</tel><mel/></identite><objectif><statut>stage</statut></objectif></item></List>"
+    },
+    {
+      "name": "GET /resume",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["resume"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /cv?id=<id>",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/cv/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["cv", "7"]
+        }
+      },
+      "response": "<cv21> <identite> <genre>M.</genre> <tel>0123456789</tel> <nom>Bouzara</nom> <prenom>Aimene</prenom> </identite> <divers> <lv> <cert>MAT</cert> <nivs>A1</nivs> <lang>EN</lang> <nivi>50</nivi> </lv> <autre> <titre>Permis de conduire</titre> <comment>A, B</comment> </autre> </divers> <objectif> <statut>stage</statut> </objectif> <id>7</id> <prof> <expe> <datedeb/> <titre>dev web</titre> </expe> </prof> </cv21>"
+    },
+    {
+      "name": "POST /insert",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<cv>\r\n    <id>7</id>\r\n    <identite>\r\n        <genre>M.</genre>\r\n        <tel>0123456789</tel>\r\n        <prenom>Hicham</prenom>\r\n        <nom>Bouzara</nom>\r\n    </identite>\r\n    <prof>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n      </prof>\r\n    <divers>\r\n        <lv>\r\n            <cert>MAT</cert>\r\n            <nivs>A1</nivs>\r\n            <lang>EN</lang>\r\n            <nivi>50</nivi>\r\n        </lv>\r\n        <autre>\r\n            <titre>Permis de conduire</titre>\r\n            <comment>A, B</comment>\r\n        </autre>\r\n    </divers>\r\n    <objectif>\r\n        <statut>stage</statut>\r\n    </objectif>\r\n</cv>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:6039/insert",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["insert"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT /update?id=<id>",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<cv>\r\n    <id>7</id>\r\n    <identite>\r\n        <genre>M.</genre>\r\n        <tel>0123456789</tel>\r\n        <prenom>Aimene</prenom>\r\n        <nom>Bouzara</nom>\r\n    </identite>\r\n    <prof>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n      </prof>\r\n    <divers>\r\n        <lv>\r\n            <cert>MAT</cert>\r\n            <nivs>A1</nivs>\r\n            <lang>EN</lang>\r\n            <nivi>50</nivi>\r\n        </lv>\r\n        <autre>\r\n            <titre>Permis de conduire</titre>\r\n            <comment>A, B</comment>\r\n        </autre>\r\n    </divers>\r\n    <objectif>\r\n        <statut>stage</statut>\r\n    </objectif>\r\n</cv>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:6039/update/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["update", "7"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /delete?id=<id>",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:6039/delete/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "6039",
+          "path": ["delete", "7"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
